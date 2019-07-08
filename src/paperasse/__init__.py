@@ -25,7 +25,10 @@ latex_jinja_env = Environment(
     line_comment_prefix='%#',
     trim_blocks=True,
     autoescape=False,
-    loader=FileSystemLoader(os.path.abspath('.'))
+    loader=FileSystemLoader([
+        os.path.abspath('.'),
+        os.path.abspath('templates'),
+    ])
 )
 
 
