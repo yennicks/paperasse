@@ -1,0 +1,29 @@
+% Any copyright is dedicated to the Public Domain.
+% https://creativecommons.org/publicdomain/zero/1.0/
+
+\documentclass[a4paper,dvipsnames,NF]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\usepackage{blindtext}
+
+\setkomavar{fromname}{Minerva McGonagall}
+\setkomavar{fromaddress}{Hogwarts Castle\\ Highlands, Scotland\\ Great Britain}
+
+\setkomavar{place}{Hogwarts Castle}
+\setkomavar{date}{\today}
+\setkomavar{subject}{Hogwarts acceptance letter}
+
+\KOMAoptions{backaddress=true,parskip=half*,enlargefirstpage=true,subject=centered,firstfoot=off,fromemail=false,fromphone=false}
+
+\begin{document}
+
+\begin{letter}{\VAR{ address }}
+
+\opening{Dear Mr/Ms. \VAR{ name }}
+
+\blindtext
+
+\closing{Yours sincerely,}
+
+\end{letter}
+\end{document}

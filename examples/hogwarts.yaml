@@ -1,0 +1,22 @@
+# Any copyright is dedicated to the Public Domain.
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+title = "Hogwarts acceptance letter"
+
+[letters]
+
+[letters.potter]
+template = "hogwarts.jinja2"
+# # Optional attachments are possible.
+# attachments = [
+#     "file_hp.pdf",
+# ]
+[letters.potter.payload]
+name = "Potter"
+address = "Harry Potter\\\\ 4 Privet Drive,\\\\ Little Whinging, Surrey England,\\\\ Great Britain"
+
+[letters.granger]
+template = "hogwarts.jinja2"
+[letters.granger.payload]
+name = "Granger"
+address = "Hermione Granger\\\\ Granger's street,\\\\ England,\\\\ Great Britain"
